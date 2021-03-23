@@ -1,16 +1,16 @@
 import { Module } from '@nestjs/common';
-import { CategoriesController } from './controlers/categories.controller';
-import { CategoriesService } from './services/categories.service';
 import { CategoriesModule } from './modules/categories.module';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { ProducersModule } from './modules/producers.module';
 import { ProductsModule } from './modules/products.module';
+import { DictionaryModule } from './modules/dictionary.module';
 
 @Module({
   imports: [
     CategoriesModule,
     ProducersModule,
     ProductsModule,
+    DictionaryModule,
     TypeOrmModule.forRoot({
       type: 'postgres',
       host: 'localhost',
