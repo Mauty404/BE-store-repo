@@ -25,8 +25,8 @@ export class ShippingProvidersController {
   }
 
   @Get(':id')
-  findOne(@Param('id') id: number) {
-    return this.shippingProvidersService.findOne('' + id);
+  findOne(@Param('id') id: string) {
+    return this.shippingProvidersService.findOne(id);
   }
 
   @Post()

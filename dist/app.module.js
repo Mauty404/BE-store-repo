@@ -12,6 +12,8 @@ const categories_module_1 = require("./modules/categories.module");
 const typeorm_1 = require("@nestjs/typeorm");
 const producers_module_1 = require("./modules/producers.module");
 const products_module_1 = require("./modules/products.module");
+const dictionary_module_1 = require("./modules/dictionary.module");
+const shipping_providers_module_1 = require("./modules/shipping.providers.module");
 let AppModule = class AppModule {
 };
 AppModule = __decorate([
@@ -20,6 +22,8 @@ AppModule = __decorate([
             categories_module_1.CategoriesModule,
             producers_module_1.ProducersModule,
             products_module_1.ProductsModule,
+            shipping_providers_module_1.ShippingProvidersModule,
+            dictionary_module_1.DictionaryModule,
             typeorm_1.TypeOrmModule.forRoot({
                 type: 'postgres',
                 host: 'localhost',

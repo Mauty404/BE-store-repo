@@ -22,8 +22,8 @@ export class ProducersController {
   }
 
   @Get(':id')
-  findOne(@Param('id') id: number) {
-    return this.producersService.findOne('' + id);
+  findOne(@Param('id') id: string) {
+    return this.producersService.findOne(id);
   }
 
   @Post()

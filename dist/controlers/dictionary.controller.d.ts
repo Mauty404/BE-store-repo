@@ -1,7 +1,12 @@
 import { CategoriesService } from '../services/categories.service';
-export declare class CategoriesController {
+import { ProducersService } from '../services/producers.service';
+import { ProductsService } from '../services/products.service';
+export declare class DictionaryController {
     private readonly categoriesService;
-    constructor(categoriesService: CategoriesService);
-    findAll(): Promise<import("../entities/category.entity").Category[]>;
-    findOne(id: number): Promise<import("../entities/category.entity").Category>;
+    private readonly producersService;
+    private readonly productsService;
+    constructor(categoriesService: CategoriesService, producersService: ProducersService, productsService: ProductsService);
+    findAllCategories(): Promise<import("../entities/category.entity").Category[]>;
+    findAllProducers(): Promise<import("../entities/producer.entity").Producer[]>;
+    findAllProducts(): Promise<import("../entities/product.entity").Product[]>;
 }

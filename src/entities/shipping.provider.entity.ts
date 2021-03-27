@@ -1,6 +1,6 @@
-import { Column, Entity, OneToMany, PrimaryGeneratedColumn } from 'typeorm';
+import { Column, Entity, PrimaryGeneratedColumn } from 'typeorm';
 
-@Entity('Shipping.providers')
+@Entity('shipping_providers')
 export class ShippingProvider {
   @PrimaryGeneratedColumn()
   id: number;
