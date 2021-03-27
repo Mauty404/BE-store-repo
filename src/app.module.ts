@@ -4,12 +4,14 @@ import { TypeOrmModule } from '@nestjs/typeorm';
 import { ProducersModule } from './modules/producers.module';
 import { ProductsModule } from './modules/products.module';
 import { DictionaryModule } from './modules/dictionary.module';
+import { ShippingProvidersModule } from './modules/shipping.providers.module';
 
 @Module({
   imports: [
     CategoriesModule,
     ProducersModule,
     ProductsModule,
+    ShippingProvidersModule,
     DictionaryModule,
     TypeOrmModule.forRoot({
       type: 'postgres',
