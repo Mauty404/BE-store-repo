@@ -10,10 +10,10 @@ export class CreateProductsDto {
   readonly factory_name: string;
 
   @IsNumber()
-  readonly producer_id: Producer;
+  readonly producer: Producer;
 
   @IsNumber()
-  readonly category_id: Category;
+  readonly category: Category;
 
   @IsString()
   readonly short_description: string;

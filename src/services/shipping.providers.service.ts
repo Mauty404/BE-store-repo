@@ -13,11 +13,15 @@ export class ShippingProvidersService {
   ) {}
 
   findAll() {
-    return this.shippingProviderRepository.find();
+    return this.shippingProviderRepository.find({
+      relations: ['orders'],
+    });
   }
 
   async findOne(id: string) {
-    const shippingProvider = await this.shippingProviderRepository.findOne(id);
+    const shippingProvider = await this.shippingProviderRepository.findOne(id, {
+      relations: ['orders'],
+    });
     if (!shippingProvider) {
       throw new NotFoundException(`Shipping provider #${id} not found`);
     }

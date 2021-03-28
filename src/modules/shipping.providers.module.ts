@@ -3,9 +3,10 @@ import { ShippingProvidersController } from '../controlers/shipping.providers.co
 import { ShippingProvidersService } from '../services/shipping.providers.service';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { ShippingProvider } from '../entities/shipping.provider.entity';
+import { Order } from '../entities/orders.entity';
 
 @Module({
-  imports: [TypeOrmModule.forFeature([ShippingProvider])],
+  imports: [TypeOrmModule.forFeature([ShippingProvider, Order])],
   controllers: [ShippingProvidersController],
   providers: [ShippingProvidersService],
 })

@@ -1,4 +1,12 @@
-import { Column, Entity, PrimaryGeneratedColumn } from 'typeorm';
+import {
+  Column,
+  Entity,
+  ManyToOne,
+  OneToMany,
+  PrimaryGeneratedColumn,
+} from 'typeorm';
+import { Order } from './orders.entity';
+import { Address } from './address.entity';
 
 @Entity('Users')
 export class User {
@@ -20,6 +28,9 @@ export class User {
   @Column()
   is_worker: boolean;
 
-  @Column()
-  address_id: number;
+  @ManyToOne((type) => Address, (address) => address.id)
+  address: Address;
+
+  @OneToMany((type) => Order, (order) => order.user)
+  orders: Order[];
 }

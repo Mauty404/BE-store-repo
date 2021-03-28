@@ -1,4 +1,6 @@
-import { Column, Entity, PrimaryGeneratedColumn } from 'typeorm';
+import { Column, Entity, OneToMany, PrimaryGeneratedColumn } from 'typeorm';
+import { Order } from './orders.entity';
+import { User } from './user.entity';
 
 @Entity('Addresses')
 export class Address {
@@ -25,4 +27,10 @@ export class Address {
 
   @Column()
   building_number: string;
+
+  @OneToMany((type) => Order, (order) => order.shipping_provider)
+  orders: Order[];
+
+  @OneToMany((type) => User, (user) => user.address)
+  users: User[];
 }

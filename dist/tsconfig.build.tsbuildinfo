@@ -2792,17 +2792,37 @@
         "affectsGlobalScope": false
       },
       "../src/entities/producer.entity.ts": {
-        "version": "4788611aec3bb1cdf298e4b5453c9939a301490b6e5c40011d725ccf8ce5ac85",
+        "version": "6989238b8715b5e1a4047b14567c590e2f0aa25fda648a62d05d1c7ffc7039d4",
         "signature": "25b8912e63b56f0d2a74c843359ef46152425204762c4e91adee113d821a7feb",
         "affectsGlobalScope": false
       },
+      "../src/entities/user.entity.ts": {
+        "version": "967065f81f29374126247704753a9c5d2e5736f8f17455a08cbe77a20f5d1a4e",
+        "signature": "2ac514100b4699e2eb4899eacc7e1a6dd4e66928e3fe7d715a063145dbd32525",
+        "affectsGlobalScope": false
+      },
+      "../src/entities/address.entity.ts": {
+        "version": "22cabdb26c830d49337f106c49a95ede5afebb54e3fcee6a38a7ff83c6a76830",
+        "signature": "35c6737b0b0dfa761ee394793d8a157ee0a9e02300e355a7423151b42c33c148",
+        "affectsGlobalScope": false
+      },
+      "../src/entities/shipping.provider.entity.ts": {
+        "version": "3ff4de2b1cfb094ca7a94cc79395a58654e4d340bb0370312e36e3ed038191b4",
+        "signature": "6005e0f93527a518037a333d45a427189b5b7022ec609211c95c5b91167c1913",
+        "affectsGlobalScope": false
+      },
+      "../src/entities/orders.entity.ts": {
+        "version": "10bb86fb2e320272cf2249c728e71e300aeb35a0c037e78de82c155ba598519c",
+        "signature": "c81e2b11218eceafb2dc4c77f0e6a18e7ccedcfd89de982f08346d967ffa7242",
+        "affectsGlobalScope": false
+      },
       "../src/entities/product.entity.ts": {
-        "version": "eb6e889a2dd240ab2c1df7e3356ddf0cd12c0cd3f6aedc4e900746c36748ed1a",
-        "signature": "0ea9b3320fe4ad6a5b378b48308b3dfc4a051c2d761e6881ed191366d99e9235",
+        "version": "444357c51d808e0c8b451367fab689b4be2cddc76bba8dcdd4c90778ce3c361b",
+        "signature": "3f73941e94d07ab5b0357e0f2d8c8befa136d144056c69974e2bc2900422542f",
         "affectsGlobalScope": false
       },
       "../src/entities/category.entity.ts": {
-        "version": "c564caa8c1b3fb7c08d85ad250e0f4ed916b6e3a843fd86a12315220e4857540",
+        "version": "95aabcb767242e2b45f94a8646f517b527371fbb3e693c18e5b58d4f7b2b3ac8",
         "signature": "911248ae36faac838a1b83ecffb3c063af34040e178235db73f1809b5660c511",
         "affectsGlobalScope": false
       },
@@ -3712,8 +3732,8 @@
         "affectsGlobalScope": false
       },
       "../src/dto/create-products.dto.ts": {
-        "version": "48a92720d59ec026d11a60855ca714d8952f45a9fd8101020ccc03388104fe02",
-        "signature": "d389901272cfeac90189571f410afd13db7a3581620a97a67029873c4bef61a8",
+        "version": "879cc95edd17830322592deee204bd26f0ca47a7753db303a38e5ee4b4f23061",
+        "signature": "ea4dd74bea347501be7582a5c002520f2ce3c4e734c3bf7c63805ea3ae424ec3",
         "affectsGlobalScope": false
       },
       "../src/dto/update-products.dto.ts": {
@@ -3722,7 +3742,7 @@
         "affectsGlobalScope": false
       },
       "../src/services/products.service.ts": {
-        "version": "940a2b5ef658daeb021b7162e5a0676f4e0ea5039b92f211b3bc55f2dc42494e",
+        "version": "4752dc7125a0172082569a2432af60181dc680fb6af118131ab0d94b946d0792",
         "signature": "6cd5c6e49560ac18c8c18b45681a38c10627f16690b0f27ae309ba5dfa193ac4",
         "affectsGlobalScope": false
       },
@@ -3732,58 +3752,13 @@
         "affectsGlobalScope": false
       },
       "../src/modules/products.module.ts": {
-        "version": "ac368c46b14f5beade986709ed3bd7806407bfae8a2ec06de21e481e174f636d",
+        "version": "fc07c21872ac2781469c910ade8ae49610cff0c559f689a0a0e73c9fcd3c27d7",
         "signature": "869dc75f2a364405dd7250ffa7f55b4facfc75218498a27b14ca830cdfce65f5",
         "affectsGlobalScope": false
       },
-      "../src/controlers/dictionary.controller.ts": {
-        "version": "4dc28344f212124bb688ccfa5e3bc5aa980d6c62afe645f2b971b2b4f959a5f9",
-        "signature": "aaed77eee4371584f56ed2c80e3d0f323fda69d53c7e0bbe7009dc46b16c9f72",
-        "affectsGlobalScope": false
-      },
-      "../src/modules/dictionary.module.ts": {
-        "version": "250d60a795b622502a1169af8adff4fc994cb36f0c26559ecf1e15e034451971",
-        "signature": "42dd9959c242d3f07c2dadb00185a75e24e8100c6087ee359161070114ad911c",
-        "affectsGlobalScope": false
-      },
-      "../src/entities/shipping.provider.entity.ts": {
-        "version": "a5c71a853d1ddfa99d3d4304e374ba4c576440a591db026a6e2da38ff2e83693",
-        "signature": "74399d8cb5f51a599617b6b3bba828eb705c0f3a174085099e81c57ffcfec0f3",
-        "affectsGlobalScope": false
-      },
-      "../src/dto/create-shipping.providers.dto.ts": {
-        "version": "26adcc13cc02c6b5b1884eaf90818763b4f255ad8109c334a67b6a25ebb4550a",
-        "signature": "ec6dbcd99ca61cd8bd77e412a50dae8d8220a20591727adc3d8cee0e126e7ef7",
-        "affectsGlobalScope": false
-      },
-      "../src/dto/update-shipping.providers.dto.ts": {
-        "version": "7d0cccf2e0f55906bc04ad967a86d0b6009ecb218b714603a5dff63e8d61e758",
-        "signature": "68e292d7109705a45106a313821e6f90b87ba7f4b4a9bbad9d7b112f6aad89e6",
-        "affectsGlobalScope": false
-      },
-      "../src/services/shipping.providers.service.ts": {
-        "version": "01709115c581df401c64530950f3eadbb184e1eab2fb5f96e73ca477550594e4",
-        "signature": "5b161f2a6fb83deabe1ff20a61a6aaf39b20958bccd0dff0fdef5a0ff2f3199d",
-        "affectsGlobalScope": false
-      },
-      "../src/controlers/shipping.providers.controller.ts": {
-        "version": "0754964f5242c3ec7fece67051d698541591d53cbae8a7acec4c08aaebd04775",
-        "signature": "46e0dfe4e00429b05b45a1cdce765306e96b5dfdc5fcba72939aa0d6949b2e56",
-        "affectsGlobalScope": false
-      },
-      "../src/modules/shipping.providers.module.ts": {
-        "version": "1183f316305c2fab22f324fe29c30efdb243ffe5f39ad2152a88a09d97ae53f0",
-        "signature": "6386494c95213e38db3577704aeaff445bcf8338bea3fb4a5e732376b101c0d4",
-        "affectsGlobalScope": false
-      },
-      "../src/entities/user.entity.ts": {
-        "version": "9914c6e752f4e718095e61628d9d3211f087bf7d1fd5464f7923ddf11f5f6e1b",
-        "signature": "e88ddbd687041ae61089f61615c4e173f24f2795085e176410e035ef156a97f4",
-        "affectsGlobalScope": false
-      },
       "../src/dto/create-users.dto.ts": {
-        "version": "2c77c965bb815e52c971372d82776065b1c4f059fb40c6a767a6ee011d69a97a",
-        "signature": "b02c02922dde9708f9d45a50c26bce5606491bd8269557eb4bc78b74a6b029cd",
+        "version": "1908020ce75114eeace4c44a1b3f03be632c9503ba4439fbcb7cb383e2d7301e",
+        "signature": "95a280dabd9d56c09e2ab8aaa7104966e1f1c1b1a741198525c0926251a287ce",
         "affectsGlobalScope": false
       },
       "../src/dto/update-users.dto.ts": {
@@ -3792,23 +3767,8 @@
         "affectsGlobalScope": false
       },
       "../src/services/users.service.ts": {
-        "version": "89d559bdaf7c911ea14d053a981488d1615fdb236f22657a83df652968b56820",
+        "version": "845f8cbd07ef0415ed09d22b63304188529ce2ebdd2858b71c955a97f717edcf",
         "signature": "8d35f77dee86ce14d7ed4654320f11562ef1ac521145cb2e3df32c320043f3d0",
-        "affectsGlobalScope": false
-      },
-      "../src/controlers/users.controller.ts": {
-        "version": "742963cc24ebd3c16ec74f80867cb85c44e568fdea26756bcdff21e3357b130b",
-        "signature": "a4072c22caf4598a9e4db2327ce329dc2ad5f4b85c9136c83899700fbe09f801",
-        "affectsGlobalScope": false
-      },
-      "../src/modules/users.module.ts": {
-        "version": "26a7f0c0f9780d91771b4f81a3d63b0a1a05ed1debbb1eb28b55de0d0cca6d99",
-        "signature": "12dec6c99bd8d11167fa91a31e737abbbf8c9cc789c151a25a9a1d13f328175c",
-        "affectsGlobalScope": false
-      },
-      "../src/entities/address.entity.ts": {
-        "version": "95c78414eaafe8522b7ae56e593724245c928c7cd12fcb09106e74361c926015",
-        "signature": "43180d19e7ba84963ab6ec64288489a7f48b81aa1cbb2b65eae3101b6795956f",
         "affectsGlobalScope": false
       },
       "../src/dto/create-addresses.dto.ts": {
@@ -3822,28 +3782,13 @@
         "affectsGlobalScope": false
       },
       "../src/services/addresses.service.ts": {
-        "version": "965ea817b4b0db569603331544cb900dd35f6107fc4c45ec4559566b3bb6f9d4",
+        "version": "f1022a7b028527254b772bf25d49fbd037f533558f1cbabf8b899fc48dab8b68",
         "signature": "86f30908e36b5b45d246765bd67f1ce7167dd0202594a457ad75a5a3a348fc51",
         "affectsGlobalScope": false
       },
-      "../src/controlers/addresses.controller.ts": {
-        "version": "80c5b57110b89e8afe5c4d97d5a975add1bd637ea2c698467696687981e0fbb8",
-        "signature": "deb00d66cd05a966b6ede0428efa12a7f9f17a61d56cd89c2ab990b0ce836498",
-        "affectsGlobalScope": false
-      },
-      "../src/modules/addresses.module.ts": {
-        "version": "ccefd2b203066325c1c2fc92791fa9ffac5ec519f124d0997533b66b2840fe0d",
-        "signature": "1679cd6314680ce07e537f7c54d3adf4ee89716385d2bdc07a3b9514d31c8a8b",
-        "affectsGlobalScope": false
-      },
-      "../src/entities/orders.entity.ts": {
-        "version": "1538b7c0258626f2800b86bd7d6ad2b05f522ad96e90f2ce9fef731a0d599bc8",
-        "signature": "154873c584f6cde73adeb88091265c51bac9524b9efa2140ecbe5af65a248f6c",
-        "affectsGlobalScope": false
-      },
       "../src/dto/create-orders.dto.ts": {
-        "version": "4aa5068858f3405a04e52666cb3ba4bfc49074ad598ebc7a517c6cd746dd50b0",
-        "signature": "4bd963209f22825db6f7a4b82f4e9309ce354539a4d311e420969f6bd54fed25",
+        "version": "733c42c59c49eb078487f41e82f411e95291ec0e8adac4270fce03af6135dce4",
+        "signature": "10bc4ed9276037ee54093494d2586d23d5e4323e4265e47185a09e6d21f7f6b4",
         "affectsGlobalScope": false
       },
       "../src/dto/update-order.dto.ts": {
@@ -3856,18 +3801,73 @@
         "signature": "bab4e3831cbbc18fe7eb7d7b83ef0891fbc1ba93fdd98da463584833e46f1ca0",
         "affectsGlobalScope": false
       },
+      "../src/dto/create-shipping.providers.dto.ts": {
+        "version": "26adcc13cc02c6b5b1884eaf90818763b4f255ad8109c334a67b6a25ebb4550a",
+        "signature": "ec6dbcd99ca61cd8bd77e412a50dae8d8220a20591727adc3d8cee0e126e7ef7",
+        "affectsGlobalScope": false
+      },
+      "../src/dto/update-shipping.providers.dto.ts": {
+        "version": "7d0cccf2e0f55906bc04ad967a86d0b6009ecb218b714603a5dff63e8d61e758",
+        "signature": "68e292d7109705a45106a313821e6f90b87ba7f4b4a9bbad9d7b112f6aad89e6",
+        "affectsGlobalScope": false
+      },
+      "../src/services/shipping.providers.service.ts": {
+        "version": "86951e43abb9fb3fd6d6c4cee746930e0a91f8e446de5af509d8bf8b59b9c963",
+        "signature": "5b161f2a6fb83deabe1ff20a61a6aaf39b20958bccd0dff0fdef5a0ff2f3199d",
+        "affectsGlobalScope": false
+      },
+      "../src/controlers/dictionary.controller.ts": {
+        "version": "86db70c5d9a8daaeccfa61ab5dce154afbdb71676d26e4ec8e0fa463cd0b1572",
+        "signature": "462bf3c61a2e34a0716797e34a6a004fb3d643f098f4bb4e62ad2237dc09369b",
+        "affectsGlobalScope": false
+      },
+      "../src/modules/dictionary.module.ts": {
+        "version": "ee81de218f763fe1e7bbf26062fe60500ac9a5285cd86caf88052435e67252ce",
+        "signature": "42dd9959c242d3f07c2dadb00185a75e24e8100c6087ee359161070114ad911c",
+        "affectsGlobalScope": false
+      },
+      "../src/controlers/shipping.providers.controller.ts": {
+        "version": "0754964f5242c3ec7fece67051d698541591d53cbae8a7acec4c08aaebd04775",
+        "signature": "46e0dfe4e00429b05b45a1cdce765306e96b5dfdc5fcba72939aa0d6949b2e56",
+        "affectsGlobalScope": false
+      },
+      "../src/modules/shipping.providers.module.ts": {
+        "version": "134dd7f10f3fc085315ba467ccb866f59f3361a453816483eee5965a6f1632a4",
+        "signature": "6386494c95213e38db3577704aeaff445bcf8338bea3fb4a5e732376b101c0d4",
+        "affectsGlobalScope": false
+      },
+      "../src/controlers/users.controller.ts": {
+        "version": "742963cc24ebd3c16ec74f80867cb85c44e568fdea26756bcdff21e3357b130b",
+        "signature": "a4072c22caf4598a9e4db2327ce329dc2ad5f4b85c9136c83899700fbe09f801",
+        "affectsGlobalScope": false
+      },
+      "../src/modules/users.module.ts": {
+        "version": "ec964143555711e01f58bcd4e4c993e9b3a270d3e10951cfb4d71b39c1f35581",
+        "signature": "12dec6c99bd8d11167fa91a31e737abbbf8c9cc789c151a25a9a1d13f328175c",
+        "affectsGlobalScope": false
+      },
+      "../src/controlers/addresses.controller.ts": {
+        "version": "80c5b57110b89e8afe5c4d97d5a975add1bd637ea2c698467696687981e0fbb8",
+        "signature": "deb00d66cd05a966b6ede0428efa12a7f9f17a61d56cd89c2ab990b0ce836498",
+        "affectsGlobalScope": false
+      },
+      "../src/modules/addresses.module.ts": {
+        "version": "f13881dec46370aa0fb84052b606970de68376399e8d512b4730ac2153de0837",
+        "signature": "1679cd6314680ce07e537f7c54d3adf4ee89716385d2bdc07a3b9514d31c8a8b",
+        "affectsGlobalScope": false
+      },
       "../src/controlers/orders.controller.ts": {
         "version": "d8f7838e24fd89647b92e37a94f8898191872271d9da8315b3470c2488f6673c",
         "signature": "e4c147f67cf64b9367faed0af7dcc2183348eddd9f348df96aa27b26e109b523",
         "affectsGlobalScope": false
       },
       "../src/modules/orders.module.ts": {
-        "version": "52d26e3e7fde7984307df906e8fa4f7632458150172e138e4ec70a917bb2d908",
+        "version": "1fb6f0e01a117d2e37cc1f8e10cf7a527a20e405e48a1c97721b5363cd49017b",
         "signature": "f2a098761374558eef78bc1c94d34464e78aba0b8a2a2b58cb009a7e88a54002",
         "affectsGlobalScope": false
       },
       "../src/app.module.ts": {
-        "version": "bd2c04a78431ff3a7665733b88c020f8d975a818f9ba7ad62ae63f6cbda5670c",
+        "version": "edae2b12a0159fc2becd4c8de1405998579f170a81b9fd35b0bb5285b1793a8e",
         "signature": "9fc7f7b6ad854404973b8cba8e6d883f758237991968e9a3965d716d46f1da88",
         "affectsGlobalScope": false
       },
@@ -7840,9 +7840,13 @@
       "../src/controlers/dictionary.controller.ts": [
         "../node_modules/@nestjs/common/index.d.ts",
         "../node_modules/@nestjs/swagger/index.d.ts",
+        "../src/services/addresses.service.ts",
         "../src/services/categories.service.ts",
+        "../src/services/orders.service.ts",
         "../src/services/producers.service.ts",
-        "../src/services/products.service.ts"
+        "../src/services/products.service.ts",
+        "../src/services/shipping.providers.service.ts",
+        "../src/services/users.service.ts"
       ],
       "../src/controlers/orders.controller.ts": [
         "../node_modules/@nestjs/common/index.d.ts",
@@ -7886,7 +7890,11 @@
         "../node_modules/class-validator/types/index.d.ts"
       ],
       "../src/dto/create-orders.dto.ts": [
-        "../node_modules/class-validator/types/index.d.ts"
+        "../node_modules/class-validator/types/index.d.ts",
+        "../src/entities/address.entity.ts",
+        "../src/entities/product.entity.ts",
+        "../src/entities/shipping.provider.entity.ts",
+        "../src/entities/user.entity.ts"
       ],
       "../src/dto/create-producers.dto.ts": [
         "../node_modules/class-validator/types/index.d.ts"
@@ -7900,7 +7908,8 @@
         "../node_modules/class-validator/types/index.d.ts"
       ],
       "../src/dto/create-users.dto.ts": [
-        "../node_modules/class-validator/types/index.d.ts"
+        "../node_modules/class-validator/types/index.d.ts",
+        "../src/entities/address.entity.ts"
       ],
       "../src/dto/update-addresses.dto.ts": [
         "../node_modules/@nestjs/swagger/index.d.ts",
@@ -7931,14 +7940,20 @@
         "../src/dto/create-users.dto.ts"
       ],
       "../src/entities/address.entity.ts": [
-        "../node_modules/typeorm/index.d.ts"
+        "../node_modules/typeorm/index.d.ts",
+        "../src/entities/orders.entity.ts",
+        "../src/entities/user.entity.ts"
       ],
       "../src/entities/category.entity.ts": [
         "../node_modules/typeorm/index.d.ts",
         "../src/entities/product.entity.ts"
       ],
       "../src/entities/orders.entity.ts": [
-        "../node_modules/typeorm/index.d.ts"
+        "../node_modules/typeorm/index.d.ts",
+        "../src/entities/address.entity.ts",
+        "../src/entities/product.entity.ts",
+        "../src/entities/shipping.provider.entity.ts",
+        "../src/entities/user.entity.ts"
       ],
       "../src/entities/producer.entity.ts": [
         "../node_modules/typeorm/index.d.ts",
@@ -7947,13 +7962,17 @@
       "../src/entities/product.entity.ts": [
         "../node_modules/typeorm/index.d.ts",
         "../src/entities/category.entity.ts",
+        "../src/entities/orders.entity.ts",
         "../src/entities/producer.entity.ts"
       ],
       "../src/entities/shipping.provider.entity.ts": [
-        "../node_modules/typeorm/index.d.ts"
+        "../node_modules/typeorm/index.d.ts",
+        "../src/entities/orders.entity.ts"
       ],
       "../src/entities/user.entity.ts": [
-        "../node_modules/typeorm/index.d.ts"
+        "../node_modules/typeorm/index.d.ts",
+        "../src/entities/address.entity.ts",
+        "../src/entities/orders.entity.ts"
       ],
       "../src/main.ts": [
         "../node_modules/@nestjs/core/index.d.ts",
@@ -7965,6 +7984,7 @@
         "../node_modules/@nestjs/typeorm/index.d.ts",
         "../src/controlers/addresses.controller.ts",
         "../src/entities/address.entity.ts",
+        "../src/entities/orders.entity.ts",
         "../src/services/addresses.service.ts"
       ],
       "../src/modules/categories.module.ts": [
@@ -7979,18 +7999,30 @@
         "../node_modules/@nestjs/common/index.d.ts",
         "../node_modules/@nestjs/typeorm/index.d.ts",
         "../src/controlers/dictionary.controller.ts",
+        "../src/entities/address.entity.ts",
         "../src/entities/category.entity.ts",
+        "../src/entities/orders.entity.ts",
         "../src/entities/producer.entity.ts",
         "../src/entities/product.entity.ts",
+        "../src/entities/shipping.provider.entity.ts",
+        "../src/entities/user.entity.ts",
+        "../src/services/addresses.service.ts",
         "../src/services/categories.service.ts",
+        "../src/services/orders.service.ts",
         "../src/services/producers.service.ts",
-        "../src/services/products.service.ts"
+        "../src/services/products.service.ts",
+        "../src/services/shipping.providers.service.ts",
+        "../src/services/users.service.ts"
       ],
       "../src/modules/orders.module.ts": [
         "../node_modules/@nestjs/common/index.d.ts",
         "../node_modules/@nestjs/typeorm/index.d.ts",
         "../src/controlers/orders.controller.ts",
+        "../src/entities/address.entity.ts",
         "../src/entities/orders.entity.ts",
+        "../src/entities/product.entity.ts",
+        "../src/entities/shipping.provider.entity.ts",
+        "../src/entities/user.entity.ts",
         "../src/services/orders.service.ts"
       ],
       "../src/modules/producers.module.ts": [
@@ -8006,6 +8038,7 @@
         "../node_modules/@nestjs/typeorm/index.d.ts",
         "../src/controlers/products.controller.ts",
         "../src/entities/category.entity.ts",
+        "../src/entities/orders.entity.ts",
         "../src/entities/producer.entity.ts",
         "../src/entities/product.entity.ts",
         "../src/services/products.service.ts"
@@ -8014,6 +8047,7 @@
         "../node_modules/@nestjs/common/index.d.ts",
         "../node_modules/@nestjs/typeorm/index.d.ts",
         "../src/controlers/shipping.providers.controller.ts",
+        "../src/entities/orders.entity.ts",
         "../src/entities/shipping.provider.entity.ts",
         "../src/services/shipping.providers.service.ts"
       ],
@@ -8021,6 +8055,7 @@
         "../node_modules/@nestjs/common/index.d.ts",
         "../node_modules/@nestjs/typeorm/index.d.ts",
         "../src/controlers/users.controller.ts",
+        "../src/entities/orders.entity.ts",
         "../src/entities/user.entity.ts",
         "../src/services/users.service.ts"
       ],
@@ -11290,12 +11325,20 @@
         "../src/services/categories.service.ts"
       ],
       "../src/controlers/dictionary.controller.ts": [
+        "../src/entities/address.entity.ts",
         "../src/entities/category.entity.ts",
+        "../src/entities/orders.entity.ts",
         "../src/entities/producer.entity.ts",
         "../src/entities/product.entity.ts",
+        "../src/entities/shipping.provider.entity.ts",
+        "../src/entities/user.entity.ts",
+        "../src/services/addresses.service.ts",
         "../src/services/categories.service.ts",
+        "../src/services/orders.service.ts",
         "../src/services/producers.service.ts",
-        "../src/services/products.service.ts"
+        "../src/services/products.service.ts",
+        "../src/services/shipping.providers.service.ts",
+        "../src/services/users.service.ts"
       ],
       "../src/controlers/orders.controller.ts": [
         "../src/dto/create-orders.dto.ts",
@@ -11327,9 +11370,18 @@
         "../src/entities/user.entity.ts",
         "../src/services/users.service.ts"
       ],
+      "../src/dto/create-orders.dto.ts": [
+        "../src/entities/address.entity.ts",
+        "../src/entities/product.entity.ts",
+        "../src/entities/shipping.provider.entity.ts",
+        "../src/entities/user.entity.ts"
+      ],
       "../src/dto/create-products.dto.ts": [
         "../src/entities/category.entity.ts",
         "../src/entities/producer.entity.ts"
+      ],
+      "../src/dto/create-users.dto.ts": [
+        "../src/entities/address.entity.ts"
       ],
       "../src/dto/update-addresses.dto.ts": [
         "../node_modules/@nestjs/common/index.d.ts",
@@ -11359,15 +11411,33 @@
         "../node_modules/@nestjs/common/index.d.ts",
         "../src/dto/create-users.dto.ts"
       ],
+      "../src/entities/address.entity.ts": [
+        "../src/entities/orders.entity.ts",
+        "../src/entities/user.entity.ts"
+      ],
       "../src/entities/category.entity.ts": [
         "../src/entities/product.entity.ts"
+      ],
+      "../src/entities/orders.entity.ts": [
+        "../src/entities/address.entity.ts",
+        "../src/entities/product.entity.ts",
+        "../src/entities/shipping.provider.entity.ts",
+        "../src/entities/user.entity.ts"
       ],
       "../src/entities/producer.entity.ts": [
         "../src/entities/product.entity.ts"
       ],
       "../src/entities/product.entity.ts": [
         "../src/entities/category.entity.ts",
+        "../src/entities/orders.entity.ts",
         "../src/entities/producer.entity.ts"
+      ],
+      "../src/entities/shipping.provider.entity.ts": [
+        "../src/entities/orders.entity.ts"
+      ],
+      "../src/entities/user.entity.ts": [
+        "../src/entities/address.entity.ts",
+        "../src/entities/orders.entity.ts"
       ],
       "../src/services/addresses.service.ts": [
         "../node_modules/typeorm/index.d.ts",

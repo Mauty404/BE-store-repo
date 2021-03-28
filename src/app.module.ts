@@ -24,7 +24,7 @@ import { OrdersModule } from './modules/orders.module';
       host: 'localhost',
       port: 5432,
       username: 'postgres',
-      password: 'K788khzwtf#',
+      password: 'xx2BcD399',
       database: 'postgres',
       autoLoadEntities: true,
       synchronize: true,

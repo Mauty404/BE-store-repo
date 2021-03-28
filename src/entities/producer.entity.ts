@@ -8,6 +8,6 @@ export class Producer {
   @Column()
   name: string;
 
-  @OneToMany((type) => Product, (product) => product.producer_id)
+  @OneToMany((type) => Product, (product) => product.producer)
   products: Product[];
 }

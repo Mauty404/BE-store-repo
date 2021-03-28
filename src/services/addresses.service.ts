@@ -13,11 +13,15 @@ export class AddressesService {
   ) {}
 
   findAll() {
-    return this.addressRepository.find();
+    return this.addressRepository.find({
+      relations: ['users', 'orders'],
+    });
   }
 
   async findOne(id: string) {
-    const address = await this.addressRepository.findOne(id);
+    const address = await this.addressRepository.findOne(id, {
+      relations: ['users', 'orders'],
+    });
     if (!address) {
       throw new NotFoundException(`Address #${id} not found`);
     }

@@ -1,4 +1,5 @@
 import { IsBoolean, IsNumber, IsString } from 'class-validator';
+import { Address } from '../entities/address.entity';
 
 export class CreateUsersDto {
   @IsString()
@@ -17,5 +18,5 @@ export class CreateUsersDto {
   readonly is_worker: boolean;
 
   @IsNumber()
-  readonly address_id: number;
+  readonly address: Address;
 }
