@@ -27,7 +27,7 @@ let CategoriesController = class CategoriesController {
         return this.categoriesService.findAll();
     }
     findOne(id) {
-        return this.categoriesService.findOne('' + id);
+        return this.categoriesService.findOne(id);
     }
     create(createCategoriesDto) {
         return this.categoriesService.create(createCategoriesDto);
@@ -51,7 +51,7 @@ __decorate([
     openapi.ApiResponse({ status: 200, type: require("../entities/category.entity").Category }),
     __param(0, common_1.Param('id')),
     __metadata("design:type", Function),
-    __metadata("design:paramtypes", [Number]),
+    __metadata("design:paramtypes", [String]),
     __metadata("design:returntype", void 0)
 ], CategoriesController.prototype, "findOne", null);
 __decorate([

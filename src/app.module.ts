@@ -5,6 +5,9 @@ import { ProducersModule } from './modules/producers.module';
 import { ProductsModule } from './modules/products.module';
 import { DictionaryModule } from './modules/dictionary.module';
 import { ShippingProvidersModule } from './modules/shipping.providers.module';
+import { UsersModule } from './modules/users.module';
+import { AddressesModule } from './modules/addresses.module';
+import { OrdersModule } from './modules/orders.module';
 
 @Module({
   imports: [
@@ -13,12 +16,15 @@ import { ShippingProvidersModule } from './modules/shipping.providers.module';
     ProductsModule,
     ShippingProvidersModule,
     DictionaryModule,
+    UsersModule,
+    AddressesModule,
+    OrdersModule,
     TypeOrmModule.forRoot({
       type: 'postgres',
       host: 'localhost',
       port: 5432,
       username: 'postgres',
-      password: 'xx2BcD399',
+      password: 'K788khzwtf#',
       database: 'postgres',
       autoLoadEntities: true,
       synchronize: true,

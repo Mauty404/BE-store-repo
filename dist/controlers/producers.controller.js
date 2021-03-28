@@ -27,7 +27,7 @@ let ProducersController = class ProducersController {
         return this.producersService.findAll();
     }
     findOne(id) {
-        return this.producersService.findOne('' + id);
+        return this.producersService.findOne(id);
     }
     create(createProducersDto) {
         return this.producersService.create(createProducersDto);
@@ -51,7 +51,7 @@ __decorate([
     openapi.ApiResponse({ status: 200, type: require("../entities/producer.entity").Producer }),
     __param(0, common_1.Param('id')),
     __metadata("design:type", Function),
-    __metadata("design:paramtypes", [Number]),
+    __metadata("design:paramtypes", [String]),
     __metadata("design:returntype", void 0)
 ], ProducersController.prototype, "findOne", null);
 __decorate([

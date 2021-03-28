@@ -14,6 +14,9 @@ const producers_module_1 = require("./modules/producers.module");
 const products_module_1 = require("./modules/products.module");
 const dictionary_module_1 = require("./modules/dictionary.module");
 const shipping_providers_module_1 = require("./modules/shipping.providers.module");
+const users_module_1 = require("./modules/users.module");
+const addresses_module_1 = require("./modules/addresses.module");
+const orders_module_1 = require("./modules/orders.module");
 let AppModule = class AppModule {
 };
 AppModule = __decorate([
@@ -24,6 +27,9 @@ AppModule = __decorate([
             products_module_1.ProductsModule,
             shipping_providers_module_1.ShippingProvidersModule,
             dictionary_module_1.DictionaryModule,
+            users_module_1.UsersModule,
+            addresses_module_1.AddressesModule,
+            orders_module_1.OrdersModule,
             typeorm_1.TypeOrmModule.forRoot({
                 type: 'postgres',
                 host: 'localhost',
