@@ -6,16 +6,16 @@ import { Product } from '../entities/product.entity';
 
 export class CreateOrdersDto {
   @IsNumber()
-  readonly shipping_provider: ShippingProvider;
+  readonly shippingProvider: ShippingProvider;
 
   @IsNumber()
-  readonly shipping_address: Address;
+  readonly shippingAddress: Address;
 
   @IsString()
   readonly status: string;
 
   @IsNumber()
-  readonly total_price: number;
+  readonly totalPrice: number;
 
   @IsNumber()
   readonly product: Product;

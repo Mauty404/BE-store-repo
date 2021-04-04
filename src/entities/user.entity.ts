@@ -29,8 +29,8 @@ export class User {
   is_worker: boolean;
 
   @ManyToOne((type) => Address, (address) => address.id)
-  address: Address;
+  addressID: Address;
 
-  @OneToMany((type) => Order, (order) => order.user)
+  @OneToMany((type) => Order, (order) => order.userID)
   orders: Order[];
 }

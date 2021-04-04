@@ -22,14 +22,14 @@ export class Order {
     (type) => ShippingProvider,
     (shippingProvider) => shippingProvider.id,
   )
-  shipping_provider: ShippingProvider;
+  shippingProviderID: ShippingProvider;
 
   @ManyToOne((type) => Address, (address) => address.id)
-  shipping_address: Address;
+  shippingAddressID: Address;
 
   @ManyToOne((type) => Product, (product) => product.id)
-  product: Product;
+  productID: Product;
 
   @ManyToOne((type) => User, (user) => user.id)
-  user: User;
+  userID: User;
 }

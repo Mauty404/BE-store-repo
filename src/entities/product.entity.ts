@@ -33,11 +33,11 @@ export class Product {
   image_source: string;
 
   @ManyToOne((type) => Producer, (producer) => producer.id)
-  producer: Producer;
+  producerID: Producer;
 
   @ManyToOne((type) => Category, (category) => category.id)
-  category: Category;
+  categoryID: Category;
 
-  @OneToMany((type) => Order, (order) => order.product)
+  @OneToMany((type) => Order, (order) => order.productID)
   orders: Order[];
 }

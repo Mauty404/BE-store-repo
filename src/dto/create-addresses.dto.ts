@@ -11,14 +11,14 @@ export class CreateAddressesDto {
   readonly city: string;
 
   @IsString()
-  readonly postal_address: string;
+  readonly postalAddress: string;
 
   @IsString()
   readonly street: string;
 
   @IsString()
-  readonly property_number: string;
+  readonly propertyNumber: string;
 
   @IsString()
-  readonly building_number: string;
+  readonly buildingNumber: string;
 }

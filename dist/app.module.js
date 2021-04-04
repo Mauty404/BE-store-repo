@@ -32,9 +32,9 @@ AppModule = __decorate([
             orders_module_1.OrdersModule,
             typeorm_1.TypeOrmModule.forRoot({
                 type: 'postgres',
-                host: 'localhost',
+                host: 'electronicsstoredb.cyg48ow7yrwx.eu-west-3.rds.amazonaws.com',
                 port: 5432,
-                username: 'postgres',
+                username: 'postgresstore',
                 password: 'xx2BcD399',
                 database: 'postgres',
                 autoLoadEntities: true,

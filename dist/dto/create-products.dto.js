@@ -16,7 +16,7 @@ const producer_entity_1 = require("../entities/producer.entity");
 const category_entity_1 = require("../entities/category.entity");
 class CreateProductsDto {
     static _OPENAPI_METADATA_FACTORY() {
-        return { name: { required: true, type: () => String }, factory_name: { required: true, type: () => String }, producer_id: { required: true, type: () => require("../entities/producer.entity").Producer }, category_id: { required: true, type: () => require("../entities/category.entity").Category }, short_description: { required: true, type: () => String }, price: { required: true, type: () => Number }, quantity: { required: true, type: () => Number }, image_source: { required: true, type: () => String } };
+        return { name: { required: true, type: () => String }, factoryName: { required: true, type: () => String }, producer: { required: true, type: () => require("../entities/producer.entity").Producer }, category: { required: true, type: () => require("../entities/category.entity").Category }, shortDescription: { required: true, type: () => String }, price: { required: true, type: () => Number }, quantity: { required: true, type: () => Number }, imageSource: { required: true, type: () => String } };
     }
 }
 __decorate([
@@ -26,19 +26,19 @@ __decorate([
 __decorate([
     class_validator_1.IsString(),
     __metadata("design:type", String)
-], CreateProductsDto.prototype, "factory_name", void 0);
+], CreateProductsDto.prototype, "factoryName", void 0);
 __decorate([
     class_validator_1.IsNumber(),
     __metadata("design:type", producer_entity_1.Producer)
-], CreateProductsDto.prototype, "producer_id", void 0);
+], CreateProductsDto.prototype, "producer", void 0);
 __decorate([
     class_validator_1.IsNumber(),
     __metadata("design:type", category_entity_1.Category)
-], CreateProductsDto.prototype, "category_id", void 0);
+], CreateProductsDto.prototype, "category", void 0);
 __decorate([
     class_validator_1.IsString(),
     __metadata("design:type", String)
-], CreateProductsDto.prototype, "short_description", void 0);
+], CreateProductsDto.prototype, "shortDescription", void 0);
 __decorate([
     class_validator_1.IsNumber(),
     __metadata("design:type", Number)
@@ -50,6 +50,6 @@ __decorate([
 __decorate([
     class_validator_1.IsString(),
     __metadata("design:type", String)
-], CreateProductsDto.prototype, "image_source", void 0);
+], CreateProductsDto.prototype, "imageSource", void 0);
 exports.CreateProductsDto = CreateProductsDto;
 //# sourceMappingURL=create-products.dto.js.map

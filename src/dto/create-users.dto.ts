@@ -15,7 +15,7 @@ export class CreateUsersDto {
   readonly password: string;
 
   @IsBoolean()
-  readonly is_worker: boolean;
+  readonly isWorker: boolean;
 
   @IsNumber()
   readonly address: Address;

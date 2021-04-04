@@ -24,10 +24,14 @@ let ProductsService = class ProductsService {
         this.categoryRepository = categoryRepository;
     }
     findAll() {
-        return this.productRepository.find();
+        return this.productRepository.find({
+            relations: ['orders'],
+        });
     }
     async findOne(id) {
-        const product = await this.productRepository.findOne(id);
+        const product = await this.productRepository.findOne(id, {
+            relations: ['orders'],
+        });
         if (!product) {
             throw new common_1.NotFoundException(`Product #${id} not found`);
         }

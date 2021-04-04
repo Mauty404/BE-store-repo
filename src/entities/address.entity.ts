@@ -23,14 +23,14 @@ export class Address {
   street: string;
 
   @Column()
-  property_number: string;
+  propertyNumber: string;
 
   @Column()
-  building_number: string;
+  buildingNumber: string;
 
-  @OneToMany((type) => Order, (order) => order.shipping_provider)
+  @OneToMany((type) => Order, (order) => order.shippingProviderID)
   orders: Order[];
 
-  @OneToMany((type) => User, (user) => user.address)
+  @OneToMany((type) => User, (user) => user.addressID)
   users: User[];
 }

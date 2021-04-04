@@ -12,15 +12,23 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.DictionaryController = void 0;
 const openapi = require("@nestjs/swagger");
 const common_1 = require("@nestjs/common");
-const categories_service_1 = require("../services/categories.service");
 const swagger_1 = require("@nestjs/swagger");
+const categories_service_1 = require("../services/categories.service");
 const producers_service_1 = require("../services/producers.service");
 const products_service_1 = require("../services/products.service");
+const users_service_1 = require("../services/users.service");
+const addresses_service_1 = require("../services/addresses.service");
+const orders_service_1 = require("../services/orders.service");
+const shipping_providers_service_1 = require("../services/shipping.providers.service");
 let DictionaryController = class DictionaryController {
-    constructor(categoriesService, producersService, productsService) {
+    constructor(categoriesService, producersService, productsService, usersService, addressesService, shippingProvidersService, ordersService) {
         this.categoriesService = categoriesService;
         this.producersService = producersService;
         this.productsService = productsService;
+        this.usersService = usersService;
+        this.addressesService = addressesService;
+        this.shippingProvidersService = shippingProvidersService;
+        this.ordersService = ordersService;
     }
     findAllCategories() {
         return this.categoriesService.findAll();
@@ -30,6 +38,18 @@ let DictionaryController = class DictionaryController {
     }
     findAllProducts() {
         return this.productsService.findAll();
+    }
+    findAllUsers() {
+        return this.usersService.findAll();
+    }
+    findAllAddresses() {
+        return this.addressesService.findAll();
+    }
+    findAllShippingProviders() {
+        return this.shippingProvidersService.findAll();
+    }
+    findAllOrders() {
+        return this.ordersService.findAll();
     }
 };
 __decorate([
@@ -53,12 +73,44 @@ __decorate([
     __metadata("design:paramtypes", []),
     __metadata("design:returntype", void 0)
 ], DictionaryController.prototype, "findAllProducts", null);
+__decorate([
+    common_1.Get('/users'),
+    openapi.ApiResponse({ status: 200, type: [require("../entities/user.entity").User] }),
+    __metadata("design:type", Function),
+    __metadata("design:paramtypes", []),
+    __metadata("design:returntype", void 0)
+], DictionaryController.prototype, "findAllUsers", null);
+__decorate([
+    common_1.Get('/addresses'),
+    openapi.ApiResponse({ status: 200, type: [require("../entities/address.entity").Address] }),
+    __metadata("design:type", Function),
+    __metadata("design:paramtypes", []),
+    __metadata("design:returntype", void 0)
+], DictionaryController.prototype, "findAllAddresses", null);
+__decorate([
+    common_1.Get('/shippingProviders'),
+    openapi.ApiResponse({ status: 200, type: [require("../entities/shipping.provider.entity").ShippingProvider] }),
+    __metadata("design:type", Function),
+    __metadata("design:paramtypes", []),
+    __metadata("design:returntype", void 0)
+], DictionaryController.prototype, "findAllShippingProviders", null);
+__decorate([
+    common_1.Get('/orders'),
+    openapi.ApiResponse({ status: 200, type: [require("../entities/orders.entity").Order] }),
+    __metadata("design:type", Function),
+    __metadata("design:paramtypes", []),
+    __metadata("design:returntype", void 0)
+], DictionaryController.prototype, "findAllOrders", null);
 DictionaryController = __decorate([
     swagger_1.ApiTags('Dictionary'),
     common_1.Controller('dictionary'),
     __metadata("design:paramtypes", [categories_service_1.CategoriesService,
         producers_service_1.ProducersService,
-        products_service_1.ProductsService])
+        products_service_1.ProductsService,
+        users_service_1.UsersService,
+        addresses_service_1.AddressesService,
+        shipping_providers_service_1.ShippingProvidersService,
+        orders_service_1.OrdersService])
 ], DictionaryController);
 exports.DictionaryController = DictionaryController;
 //# sourceMappingURL=dictionary.controller.js.map

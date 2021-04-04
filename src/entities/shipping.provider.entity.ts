@@ -1,7 +1,7 @@
 import { Column, Entity, OneToMany, PrimaryGeneratedColumn } from 'typeorm';
 import { Order } from './orders.entity';
 
-@Entity('Shipping_providers')
+@Entity('ShippingProviders')
 export class ShippingProvider {
   @PrimaryGeneratedColumn()
   id: number;
@@ -12,6 +12,6 @@ export class ShippingProvider {
   @Column()
   price: number;
 
-  @OneToMany((type) => Order, (order) => order.shipping_provider)
+  @OneToMany((type) => Order, (order) => order.shippingProviderID)
   orders: Order[];
 }

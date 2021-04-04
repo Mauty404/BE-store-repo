@@ -14,9 +14,10 @@ const openapi = require("@nestjs/swagger");
 const typeorm_1 = require("typeorm");
 const producer_entity_1 = require("./producer.entity");
 const category_entity_1 = require("./category.entity");
+const orders_entity_1 = require("./orders.entity");
 let Product = class Product {
     static _OPENAPI_METADATA_FACTORY() {
-        return { id: { required: true, type: () => Number }, name: { required: true, type: () => String }, factory_name: { required: true, type: () => String }, producer_id: { required: true, type: () => require("./producer.entity").Producer }, category_id: { required: true, type: () => require("./category.entity").Category }, short_description: { required: true, type: () => String }, price: { required: true, type: () => Number }, quantity: { required: true, type: () => Number }, image_source: { required: true, type: () => String } };
+        return { id: { required: true, type: () => Number }, name: { required: true, type: () => String }, factory_name: { required: true, type: () => String }, short_description: { required: true, type: () => String }, price: { required: true, type: () => Number }, quantity: { required: true, type: () => Number }, image_source: { required: true, type: () => String }, producerID: { required: true, type: () => require("./producer.entity").Producer }, categoryID: { required: true, type: () => require("./category.entity").Category }, orders: { required: true, type: () => [require("./orders.entity").Order] } };
     }
 };
 __decorate([
@@ -31,14 +32,6 @@ __decorate([
     typeorm_1.Column({ unique: true }),
     __metadata("design:type", String)
 ], Product.prototype, "factory_name", void 0);
-__decorate([
-    typeorm_1.ManyToOne((type) => producer_entity_1.Producer, (producer) => producer.id),
-    __metadata("design:type", producer_entity_1.Producer)
-], Product.prototype, "producer_id", void 0);
-__decorate([
-    typeorm_1.ManyToOne((type) => category_entity_1.Category, (category) => category.id),
-    __metadata("design:type", category_entity_1.Category)
-], Product.prototype, "category_id", void 0);
 __decorate([
     typeorm_1.Column(),
     __metadata("design:type", String)
@@ -55,6 +48,18 @@ __decorate([
     typeorm_1.Column(),
     __metadata("design:type", String)
 ], Product.prototype, "image_source", void 0);
+__decorate([
+    typeorm_1.ManyToOne((type) => producer_entity_1.Producer, (producer) => producer.id),
+    __metadata("design:type", producer_entity_1.Producer)
+], Product.prototype, "producerID", void 0);
+__decorate([
+    typeorm_1.ManyToOne((type) => category_entity_1.Category, (category) => category.id),
+    __metadata("design:type", category_entity_1.Category)
+], Product.prototype, "categoryID", void 0);
+__decorate([
+    typeorm_1.OneToMany((type) => orders_entity_1.Order, (order) => order.productID),
+    __metadata("design:type", Array)
+], Product.prototype, "orders", void 0);
 Product = __decorate([
     typeorm_1.Entity('Products')
 ], Product);

@@ -7,7 +7,7 @@ export class CreateProductsDto {
   readonly name: string;
 
   @IsString()
-  readonly factory_name: string;
+  readonly factoryName: string;
 
   @IsNumber()
   readonly producer: Producer;
@@ -16,7 +16,7 @@ export class CreateProductsDto {
   readonly category: Category;
 
   @IsString()
-  readonly short_description: string;
+  readonly shortDescription: string;
 
   @IsNumber()
   readonly price: number;
@@ -25,5 +25,5 @@ export class CreateProductsDto {
   readonly quantity: number;
 
   @IsString()
-  readonly image_source: string;
+  readonly imageSource: string;
 }
