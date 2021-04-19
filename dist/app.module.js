@@ -8,15 +8,15 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.AppModule = void 0;
 const common_1 = require("@nestjs/common");
-const categories_module_1 = require("./modules/categories.module");
+const categories_module_1 = require("./categories/categories.module");
 const typeorm_1 = require("@nestjs/typeorm");
-const producers_module_1 = require("./modules/producers.module");
-const products_module_1 = require("./modules/products.module");
-const dictionary_module_1 = require("./modules/dictionary.module");
-const shipping_providers_module_1 = require("./modules/shipping.providers.module");
-const users_module_1 = require("./modules/users.module");
-const addresses_module_1 = require("./modules/addresses.module");
-const orders_module_1 = require("./modules/orders.module");
+const producers_module_1 = require("./producers/producers.module");
+const products_module_1 = require("./products/products.module");
+const shipping_providers_module_1 = require("./shipping_providers/shipping.providers.module");
+const users_module_1 = require("./users/users.module");
+const addresses_module_1 = require("./addresses/addresses.module");
+const orders_module_1 = require("./orders/orders.module");
+const file_upload_module_1 = require("./file_upload/file.upload.module");
 let AppModule = class AppModule {
 };
 AppModule = __decorate([
@@ -26,10 +26,10 @@ AppModule = __decorate([
             producers_module_1.ProducersModule,
             products_module_1.ProductsModule,
             shipping_providers_module_1.ShippingProvidersModule,
-            dictionary_module_1.DictionaryModule,
             users_module_1.UsersModule,
             addresses_module_1.AddressesModule,
             orders_module_1.OrdersModule,
+            file_upload_module_1.FileUploadModule,
             typeorm_1.TypeOrmModule.forRoot({
                 type: 'postgres',
                 host: 'electronicsstoredb.cyg48ow7yrwx.eu-west-3.rds.amazonaws.com',

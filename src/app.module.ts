@@ -1,13 +1,13 @@
 import { Module } from '@nestjs/common';
-import { CategoriesModule } from './modules/categories.module';
+import { CategoriesModule } from './categories/categories.module';
 import { TypeOrmModule } from '@nestjs/typeorm';
-import { ProducersModule } from './modules/producers.module';
-import { ProductsModule } from './modules/products.module';
-import { DictionaryModule } from './modules/dictionary.module';
-import { ShippingProvidersModule } from './modules/shipping.providers.module';
-import { UsersModule } from './modules/users.module';
-import { AddressesModule } from './modules/addresses.module';
-import { OrdersModule } from './modules/orders.module';
+import { ProducersModule } from './producers/producers.module';
+import { ProductsModule } from './products/products.module';
+import { ShippingProvidersModule } from './shipping_providers/shipping.providers.module';
+import { UsersModule } from './users/users.module';
+import { AddressesModule } from './addresses/addresses.module';
+import { OrdersModule } from './orders/orders.module';
+import { FileUploadModule } from './file_upload/file.upload.module';
 
 @Module({
   imports: [
@@ -15,10 +15,10 @@ import { OrdersModule } from './modules/orders.module';
     ProducersModule,
     ProductsModule,
     ShippingProvidersModule,
-    DictionaryModule,
     UsersModule,
     AddressesModule,
     OrdersModule,
+    FileUploadModule,
     TypeOrmModule.forRoot({
       type: 'postgres',
       host: 'electronicsstoredb.cyg48ow7yrwx.eu-west-3.rds.amazonaws.com',
