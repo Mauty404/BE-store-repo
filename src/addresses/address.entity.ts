@@ -17,7 +17,7 @@ export class Address {
   city: string;
 
   @Column()
-  postal_address: string;
+  postalAddress: string;
 
   @Column()
   street: string;

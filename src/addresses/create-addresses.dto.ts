@@ -1,6 +1,7 @@
-import { IsString } from 'class-validator';
+import { IsNumber, IsString } from 'class-validator';
 
 export class CreateAddressesDto {
+
   @IsString()
   readonly land: string;
 
@@ -16,9 +17,9 @@ export class CreateAddressesDto {
   @IsString()
   readonly street: string;
 
-  @IsString()
+  @IsNumber()
   readonly propertyNumber: string;
 
-  @IsString()
+  @IsNumber()
   readonly buildingNumber: string;
 }

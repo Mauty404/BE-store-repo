@@ -17,6 +17,8 @@ const users_module_1 = require("./users/users.module");
 const addresses_module_1 = require("./addresses/addresses.module");
 const orders_module_1 = require("./orders/orders.module");
 const file_upload_module_1 = require("./file_upload/file.upload.module");
+const core_1 = require("@nestjs/core");
+const http_error_filter_1 = require("./shared/http-error.filter");
 let AppModule = class AppModule {
 };
 AppModule = __decorate([
@@ -42,7 +44,12 @@ AppModule = __decorate([
             }),
         ],
         controllers: [],
-        providers: [],
+        providers: [
+            {
+                provide: core_1.APP_FILTER,
+                useClass: http_error_filter_1.HttpErrorFilter,
+            },
+        ],
     })
 ], AppModule);
 exports.AppModule = AppModule;

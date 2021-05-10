@@ -1,4 +1,4 @@
-import { Injectable, NotFoundException } from '@nestjs/common';
+import { HttpException, HttpStatus, Injectable, NotFoundException } from '@nestjs/common';
 import { Producer } from './producer.entity';
 import { UpdateProducersDto } from './update-producers.dto';
 import { InjectRepository } from '@nestjs/typeorm';
@@ -30,6 +30,15 @@ export class ProducersService {
 
   create(createProducersDto: CreateProducersDto) {
     const producer = this.producerRepository.create(createProducersDto);
+
+    const { name } = createProducersDto;
+    if (typeof name !== 'string') {
+      throw new HttpException(
+        'Name must be a string',
+        HttpStatus.CONFLICT,
+      );
+    }
+
     return this.producerRepository.save(producer);
   }
 

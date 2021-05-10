@@ -8,6 +8,8 @@ import { UsersModule } from './users/users.module';
 import { AddressesModule } from './addresses/addresses.module';
 import { OrdersModule } from './orders/orders.module';
 import { FileUploadModule } from './file_upload/file.upload.module';
+import { APP_FILTER } from '@nestjs/core';
+import { HttpErrorFilter } from './shared/http-error.filter';
 
 @Module({
   imports: [
@@ -31,6 +33,11 @@ import { FileUploadModule } from './file_upload/file.upload.module';
     }),
   ],
   controllers: [],
-  providers: [],
+  providers: [
+    {
+      provide: APP_FILTER,
+      useClass: HttpErrorFilter,
+    },
+  ],
 })
 export class AppModule {}

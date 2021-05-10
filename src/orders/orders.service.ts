@@ -1,9 +1,15 @@
-import { Injectable, NotFoundException } from '@nestjs/common';
+import {
+  HttpException,
+  HttpStatus,
+  Injectable,
+  NotFoundException,
+} from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
 import { Order } from './orders.entity';
 import { Repository } from 'typeorm';
 import { CreateOrdersDto } from './create-orders.dto';
 import { UpdateOrdersDto } from './update-orders.dto';
+import { stat } from 'fs';
 
 @Injectable()
 export class OrdersService {
@@ -26,6 +32,21 @@ export class OrdersService {
 
   create(createOrderDto: CreateOrdersDto) {
     const order = this.orderRepository.create(createOrderDto);
+
+    const { status } = createOrderDto;
+
+    // Incomplete status validation
+    if (status != 'Order accepted') {
+      throw new HttpException(
+        'Status has not correct form',
+        HttpStatus.BAD_REQUEST,
+      );
+    }
+
+    /*&& status != 'Preparing' &&
+    status != 'Ready for deliving' || status != 'In delvered' ||
+    status != 'Delivered'*/
+
     return this.orderRepository.save(order);
   }
 

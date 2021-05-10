@@ -22,8 +22,9 @@ export class AddressesController {
   }
 
   @Get(':id')
-  findOne(@Param('id') id: string) {
-    return this.addressesService.findOne(id);
+  findOne(@Param('id') id: number) {
+    console.log(typeof id);
+    return this.addressesService.findOne(id + '');
   }
 
   @Post()

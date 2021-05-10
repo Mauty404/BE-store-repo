@@ -1,4 +1,4 @@
-import { Injectable, NotFoundException } from '@nestjs/common';
+import { HttpException, HttpStatus, Injectable, NotFoundException } from '@nestjs/common';
 import { Category } from './category.entity';
 import { UpdateCategoriesDto } from './update-categories.dto';
 import { InjectRepository } from '@nestjs/typeorm';
@@ -30,6 +30,17 @@ export class CategoriesService {
 
   create(createCategoriesDto: CreateCategoriesDto) {
     const category = this.categoryRepository.create(createCategoriesDto);
+
+    const { name } = createCategoriesDto;
+    const regexNumber = new RegExp('[0-9]');
+
+    if (regexNumber.test(name)) {
+      throw new HttpException(
+        'Name can not contains integer value',
+        HttpStatus.BAD_REQUEST,
+      );
+    }
+
     return this.categoryRepository.save(category);
   }
 
@@ -41,6 +52,17 @@ export class CategoriesService {
     if (!category) {
       throw new NotFoundException(`Category #${id} not found`);
     }
+
+    const { name } = updateCategoryDto;
+    const regexNumber = new RegExp('[0-9]');
+
+    if (regexNumber.test(name)) {
+      throw new HttpException(
+        'Name can not contains integer value',
+        HttpStatus.BAD_REQUEST,
+      );
+    }
+
     return this.categoryRepository.save(category);
   }
 
