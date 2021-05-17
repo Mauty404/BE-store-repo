@@ -33,3 +33,4 @@ export class Order {
   @ManyToOne((type) => User, (user) => user.id)
   userID: User;
 }
+
